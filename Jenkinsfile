@@ -45,10 +45,10 @@ pipeline {
                     else
                         echo "Installing Tomcat 10..."
                         cd /opt
-                        sudo wget https://archive.apache.org/dist/tomcat/tomcat-10/v10.1.30/bin/apache-tomcat-10.1.30.tar.gz
-                        sudo tar -xzf apache-tomcat-10.1.30.tar.gz
-                        sudo mv apache-tomcat-10.1.30 tomcat10
-                        sudo chmod +x /opt/tomcat10/bin/*.sh
+                        wget https://archive.apache.org/dist/tomcat/tomcat-10/v10.1.30/bin/apache-tomcat-10.1.30.tar.gz
+                        tar -xzf apache-tomcat-10.1.30.tar.gz
+                        mv apache-tomcat-10.1.30 tomcat10
+                        chmod +x /opt/tomcat10/bin/*.sh
                     fi
                 '''
             }
